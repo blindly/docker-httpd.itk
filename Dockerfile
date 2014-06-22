@@ -16,6 +16,9 @@ RUN yum install httpd-itk -y
 # Add HTTPD Conf
 ADD httpd.conf /etc/httpd/conf/httpd.conf
 
+# Add HTTPD System Configuration
+ADD httpd /etc/sysconfig/httpd
+
 # Add PHP.conf
 ADD php.conf /etc/httpd/conf.d/php.conf
 
